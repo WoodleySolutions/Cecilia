@@ -1,8 +1,9 @@
-export type Student = 'alexander' | 'adrianna' | 'dad';
+export type Student = 'alexander' | 'adrianna' | 'littleOne' | 'dad';
 
 export interface StudentProgress {
   alexander: number;
   adrianna: number;
+  littleOne: number;
   dad: number;
 }
 

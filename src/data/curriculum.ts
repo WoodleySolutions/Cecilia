@@ -1,6 +1,63 @@
 import { CurriculumData, ExerciseCategory, WeeklySchedule } from '../types';
 
 export const curriculum: Record<string, CurriculumData> = {
+  littleOne: {
+    name: "Little Explorer's Musical Journey (4.5 years)",
+    weeks: [
+      {
+        week: 1,
+        title: "Musical Sounds & God's Creation",
+        goals: ["Explore high and low sounds", "Feel the piano keys", "Learn that music makes God happy"],
+        activities: [
+          "Touch all the white keys and listen to sounds",
+          "Find the 'baby sounds' (high) and 'daddy sounds' (low)", 
+          "Play 'raindrops' (high keys) and 'thunder' (low keys)",
+          "Sing 'Twinkle, Twinkle' while touching keys"
+        ],
+        catholicConnection: "God made all the beautiful sounds we can hear - just like He made birds to sing!",
+        ageAdaptation: "Pure exploration, no pressure, lots of praise for curiosity"
+      },
+      {
+        week: 2,
+        title: "Finger Friends & Hand Position",
+        goals: ["Learn finger names", "Sit nicely at piano", "Make gentle sounds"],
+        activities: [
+          "Name each finger (Thumb, Pointer, Tall Man, Ring, Pinky)",
+          "Play finger puppet games with each finger",
+          "Practice 'pretty posture' sitting up straight",
+          "Gentle finger taps like raindrops"
+        ],
+        catholicConnection: "God gave us special fingers to make beautiful music for Him",
+        ageAdaptation: "Make it playful with stories and finger puppets"
+      },
+      {
+        week: 3,
+        title: "Loud & Soft, Fast & Slow",
+        goals: ["Feel different volumes", "Try different speeds", "Express feelings through sound"],
+        activities: [
+          "Play 'whisper music' (very soft)",
+          "Play 'happy music' (louder)",
+          "Walk like a turtle (slow) and bunny (fast) on keys",
+          "Tell a story with sounds"
+        ],
+        catholicConnection: "Sometimes we pray quietly, sometimes we sing loudly - God loves both!",
+        ageAdaptation: "Use movement and storytelling, keep sessions very short"
+      },
+      {
+        week: 4,
+        title: "Simple Songs & Patterns",
+        goals: ["Play along with simple songs", "Make patterns", "Share music with family"],
+        activities: [
+          "Play along with 'Mary Had a Little Lamb'",
+          "Make up patterns (high-low-high-low)",
+          "Play 'copy cat' with older siblings",
+          "Show family a favorite sound"
+        ],
+        catholicConnection: "We share our musical gifts with our family, just like angels share songs in heaven",
+        ageAdaptation: "Focus on participation over perfection, celebrate everything"
+      }
+    ]
+  },
   alexander: {
     name: "Alexander's Journey",
     weeks: [

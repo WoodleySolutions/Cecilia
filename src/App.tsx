@@ -13,6 +13,7 @@ function App() {
   const [studentProgress, setStudentProgress] = useState<StudentProgress>({
     alexander: 0,
     adrianna: 0,
+    littleOne: 0,
     dad: 0
   });
 
@@ -46,12 +47,27 @@ function App() {
     }));
   };
 
+  const resetAllProgress = () => {
+    if (window.confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+      setStudentProgress({
+        alexander: 0,
+        adrianna: 0,
+        littleOne: 0,
+        dad: 0
+      });
+      localStorage.removeItem('pianoProgress');
+    }
+  };
+
   return (
     <div className="App">
       <header className="app-header">
         <h1>Cecilia - Family Piano Journey</h1>
         <p className="motto">Ad Majorem Dei Gloriam - For the Greater Glory of God</p>
         <p className="subtitle">Named after St. Cecilia, Patron Saint of Musicians</p>
+        <button onClick={resetAllProgress} className="reset-button">
+          Reset All Progress
+        </button>
       </header>
 
       <main className="main-content">
@@ -73,6 +89,16 @@ function App() {
             currentWeek={studentProgress.adrianna + 1}
             curriculum={curriculum.adrianna}
             onShowLessons={() => handleShowLessons('adrianna')}
+            onMarkComplete={markWeekComplete}
+          />
+
+          <StudentCard
+            student="littleOne"
+            name="Little Explorer (4.5) - Musical Discovery" 
+            progress={studentProgress.littleOne}
+            currentWeek={studentProgress.littleOne + 1}
+            curriculum={curriculum.littleOne}
+            onShowLessons={() => handleShowLessons('littleOne')}
             onMarkComplete={markWeekComplete}
           />
           

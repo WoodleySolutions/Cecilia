@@ -22,20 +22,21 @@ const StudentCard: React.FC<StudentCardProps> = ({
   onMarkComplete,
   isParent = false
 }) => {
-  const progressPercentage = (progress / 8) * 100;
+  const totalWeeks = curriculum.weeks.length;
+  const progressPercentage = (progress / totalWeeks) * 100;
   
   const getCurrentLessonText = () => {
-    if (currentWeek <= 8) {
+    if (currentWeek <= totalWeeks) {
       const currentLesson = curriculum.weeks.find(w => w.week === currentWeek);
       if (currentLesson) {
         return `Current: Week ${currentWeek} - ${currentLesson.title}`;
       }
     }
-    return "Phase 1 Complete! Ready for Phase 2";
+    return totalWeeks === 4 ? "Musical Discovery Complete! 🎵" : "Phase 1 Complete! Ready for Phase 2";
   };
 
   const handleMarkComplete = () => {
-    if (currentWeek <= 8) {
+    if (currentWeek <= totalWeeks) {
       onMarkComplete(student, currentWeek);
     }
   };
@@ -54,7 +55,7 @@ const StudentCard: React.FC<StudentCardProps> = ({
         <button onClick={onShowLessons} className="view-curriculum-btn">
           View Curriculum
         </button>
-        {currentWeek <= 8 && (
+        {currentWeek <= totalWeeks && (
           <button onClick={handleMarkComplete} className="mark-complete-btn">
             Mark Week {currentWeek} Complete
           </button>
