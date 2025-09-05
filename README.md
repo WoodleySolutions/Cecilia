@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Cecilia - Family Piano Journey
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Named after St. Cecilia, Patron Saint of Musicians*
 
-## Available Scripts
+## Ad Majorem Dei Gloriam - For the Greater Glory of God
 
-In the project directory, you can run:
+Cecilia is a comprehensive piano curriculum tracking app designed specifically for homeschooling families who want to integrate their Catholic faith with musical education.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Age-Appropriate Curricula**: Separate 8-week learning tracks for children aged 7 and 9
+- **Parent Teaching Track**: A preparation curriculum to help parents stay one step ahead of their children
+- **Catholic Integration**: Every lesson connects musical concepts to Catholic teachings about beauty, creation, and worship
+- **Special Needs Adaptations**: Specialized exercises and modifications for children with cerebral palsy/hemiplegia
+- **Progress Tracking**: Visual progress bars and milestone tracking for each student
+- **Weekly Scheduling**: Built-in family practice schedule with varied activities
+- **Therapeutic Exercises**: Daily left-hand strengthening routines
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Our Family Story
 
-### `npm test`
+Created by a Catholic father of 4 who wanted to teach his children piano while incorporating the faith's beautiful understanding of music as a pathway to heaven. This app serves Alexander (9, 3rd grade) and Adrianna (7, 2nd grade), with special accommodations for Alexander's cerebral palsy.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `npm run build`
+- React with TypeScript
+- CSS Grid and Flexbox for responsive design
+- Local Storage for progress persistence
+- Modern CSS animations and transitions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Educational Philosophy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We believe that music is one of God's greatest gifts, designed to lift our hearts and minds to Him. This curriculum treats every musical concept as a reflection of divine beauty and order, helping children not just learn to play piano, but to understand music as prayer and worship.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Getting Started
 
-### `npm run eject`
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm start` to begin your family's musical journey
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This app is designed to be deployed on Netlify directly from GitHub for easy family access across devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Available Scripts
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+*"Sing to the Lord a new song; play skillfully with a shout of joy." - Psalm 33:3*
