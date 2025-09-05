@@ -401,11 +401,11 @@ export const leftHandExercises: ExerciseCategory[] = [
 ];
 
 export const weeklySchedule: WeeklySchedule = {
-  Monday: "Alexander - 20 minutes, Adrianna - 15 minutes, Dad prep - 30 minutes",
-  Tuesday: "Left hand therapy for Alexander - 10 minutes, Music theory review",
-  Wednesday: "Adrianna - 15 minutes, Alexander - 20 minutes, Family practice",
-  Thursday: "Dad advancement - 30 minutes, Review week's progress",
-  Friday: "Both children together - 25 minutes, Fun musical games",
-  Saturday: "Family music time - hymns and prayer songs",
-  Sunday: "Rest day - listen to sacred music during family time"
+  Monday: "Main lesson day - Alexander (20 min), Adrianna (15 min), Dad prep (30 min)",
+  Tuesday: "Rest day - Self-directed practice and Alexander's left hand exercises",
+  Wednesday: "Individual practice - Children work independently on assigned pieces",
+  Thursday: "Dad's advancement session (30 min) - Prepare for upcoming lessons",
+  Friday: "Family music time - Both children together (25 min), Musical games",
+  Saturday: "Sacred music focus - Hymns, prayer songs, and family worship",
+  Sunday: "Sabbath rest - Listen to beautiful sacred music during family time"
 };
